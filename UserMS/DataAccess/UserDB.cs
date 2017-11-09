@@ -12,9 +12,7 @@ namespace UserMS.DataAccess
         public static List<User> usersInMemory = new List<User>();
 
 
-        public static List<User> GetUsers(string userTypes, string userName, ActiveStateEnum active, int? pageNumber, int? pageSize, 
-                                          UserOrderEnum order, OrderDirectionEnum orderDirection)
-        {
+        public static List<User> GetUsers
             return usersInMemory;
         }
 
@@ -34,6 +32,23 @@ namespace UserMS.DataAccess
         {
             usersInMemory.Add(user);
             return GetUserById(user.Id.Value);
+
+        }
+
+    public void UpdateUser(User user)
+    {
+        foreach (User userinlist in userInMemory)
+        {
+            if (userinlist.Id == user.Id)
+            {
+                user Name = user Name;
+
+
+            }
+
         }
     }
+}
+
+
 }
